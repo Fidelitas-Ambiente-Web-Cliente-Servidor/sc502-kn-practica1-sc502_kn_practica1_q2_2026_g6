@@ -1,0 +1,101 @@
+
+:root {
+    --bg-navy: #002b5b;       
+    --accent-warning: #ffc107; 
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+}
+
+.bg-navy {
+    background-color: var(--bg-navy) !important;
+}
+
+.navbar-brand span {
+    color: var(--accent-warning);
+}
+
+.filter-sidebar {
+    background-color: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px; 
+    z-index: 10;
+}
+
+.text-navy {
+    color: var(--bg-navy) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--bg-navy);
+    border-color: var(--bg-navy);
+}
+
+.btn-navy {
+    background-color: var(--bg-navy);
+    border-color: var(--bg-navy);
+    transition: background-color 0.2s ease;
+}
+
+.btn-navy:hover {
+    background-color: #001f42;
+    border-color: #001f42;
+}
+
+.course-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-warning) !important;
+    box-shadow: 0 10px 20px rgba(0,43,91,0.15) !important;
+}
+
+.course-card .card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.course-card:hover .card-img-top {
+    transform: scale(1.02);
+}
+
+.course-card .badge.bg-navy {
+    background-color: var(--bg-navy) !important;
+    color: #ffffff;
+}
+
+.course-card .border-top {
+    border-top: 1px solid #edf2f7 !important;
+}
+
+footer {
+    border-top: 4px solid var(--accent-warning);
+}
+
+.social-media-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-media-icon:hover {
+    background-color: var(--accent-warning) !important;
+    color: var(--bg-navy) !important;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 991.98px) {
+    .filter-sidebar {
+        position: relative;
+        top: 0;
+        margin-bottom: 2rem;
+    }
+}
