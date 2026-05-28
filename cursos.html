@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos | Academia de Música</title>
+    <!-- Bootstrap CDN (Permitido ÚNICAMENTE para el sistema de grillas/layout de la tarea) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos compartidos por el grupo (Navbar, Footer, Fuentes globales) -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Mis estilos específicos para la página de catálogo de cursos -->
+    <link rel="stylesheet" href="css/cursos.css">
+</head>
+<body>
+
+    <!-- NAVBAR DE LA ACADEMIA (Estilizado globalmente en style.css) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🎵 Academia de Música</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link active" href="cursos.html">Cursos</a>
+                <a class="nav-link" href="profesores.html">Profesores</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL DEL CATÁLOGO -->
+    <main class="container my-5">
+        
+        <!-- Encabezado de la página -->
+        <header class="text-center mb-5">
+            <h1 class="page-title">Nuestro Catálogo de Cursos</h1>
+            <p class="page-description">Explora nuestros programas musicales diseñados para despertar tu creatividad, desarrollar tu oído técnico y dominar el escenario con confianza.</p>
+        </header>
+
+        <!-- Barra de búsqueda visible -->
+        <section class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="¿Qué instrumento o técnica deseas aprender?...">
+                    <button type="button" class="search-button">Buscar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CATEGORÍA 1 - EJECUCIÓN INSTRUMENTAL -->
+        <section class="category-block mb-5">
+            <h2 class="category-title mb-4">Ejecución Instrumental</h2>
+            
+            <div class="row g-4">
+                <!-- Tarjeta 1: Guitarra -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="course-card">
+                        <div class="course-image-placeholder">
+                            <span>🎸 Imagen Guitarra</span>
+                        </div>
+                        <div class="course-card-body">
+                            <span class="course-badge">Instrumentos</span>
+                            <h3 class="course-name">Guitarra Acústica y Eléctrica</h3>
+                            <p class="course-text">Aprende desde cero los acordes principales, técnicas de rasgueo y lectura de tablaturas con tus canciones favoritas.</p>
+                            <div class="course-footer">
+                                <span class="course-duration">⏱️ 32 horas</span>
+                                <span class="course-price">₡55,000</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Tarjeta 2: Piano -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="course-card">
+                        <div class="course-image-placeholder">
+                            <span>🎹 Imagen Piano</span>
+                        </div>
+                        <div class="course-card-body">
+                            <span class="course-badge">Instrumentos</span>
+                            <h3 class="course-name">Piano y Teclado Contemporáneo</h3>
+                            <p class="course-text">Domina la independencia de manos, escalas fundamentales y los secretos del acompañamiento en géneros modernos.</p>
+                            <div class="course-footer">
+                                <span class="course-duration">⏱️ 40 horas</span>
+                                <span class="course-price">₡65,000</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Tarjeta 3: Batería -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="course-card">
+                        <div class="course-image-placeholder">
+                            <span>🥁 Imagen Batería</span>
+                        </div>
+                        <div class="course-card-body">
+                            <span class="course-badge">Instrumentos</span>
+                            <h3 class="course-name">Batería y Percusión Rítmica</h3>
+                            <p class="course-text">Desarrolla la coordinación, el tempo perfecto y los ritmos base que sostienen a cualquier banda de rock, pop o jazz.</p>
+                            <div class="course-footer">
+                                <span class="course-duration">⏱️ 36 horas</span>
+                                <span class="course-price">₡60,000</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CATEGORÍA 2 - PRODUCCIÓN Y VOZ -->
+        <section class="category-block mb-5">
+            <h2 class="category-title mb-4">Producción y Voz</h2>
+            
+            <div class="row g-4">
+                <!-- Tarjeta 4: Canto -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="course-card">
+                        <div class="course-image-placeholder">
+                            <span>🎤 Imagen Canto</span>
+                        </div>
+                        <div class="course-card-body">
+                            <span class="course-badge">Canto</span>
+                            <h3 class="course-name">Técnica Vocal y Canto</h3>
+                            <p class="course-text">Descubre el poder de tu voz mediante ejercicios de respiración, afinación, colocación y cuidado de las cuerdas vocales.</p>
+                            <div class="course-footer">
+                                <span class="course-duration">⏱️ 30 horas</span>
+                                <span class="course-price">₡58,000</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Tarjeta 5: Producción Musical -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="course-card">
+                        <div class="course-image-placeholder">
+                            <span>🎚️ Imagen Producción</span>
+                        </div>
+                        <div class="course-card-body">
+                            <span class="course-badge">Producción</span>
+                            <h3 class="course-name">Producción Musical y Audio (DAW)</h3>
+                            <p class="course-text">Aprende a grabar, editar y mezclar tus propias canciones en un estudio digital utilizando herramientas de software profesional.</p>
+                            <div class="course-footer">
+                                <span class="course-duration">⏱️ 48 horas</span>
+                                <span class="course-price">₡80,000</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Tarjeta 6: Composición -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="course-card">
+                        <div class="course-image-placeholder">
+                            <span>🎼 Imagen Teoría</span>
+                        </div>
+                        <div class="course-card-body">
+                            <span class="course-badge">Composición</span>
+                            <h3 class="course-name">Composición y Teoría Musical</h3>
+                            <p class="course-text">Rompe el bloqueo creativo entendiendo cómo se construyen las melodías, armonías y estructuras que crean un éxito musical.</p>
+                            <div class="course-footer">
+                                <span class="course-duration">⏱️ 24 horas</span>
+                                <span class="course-price">₡50,000</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER DE LA ACADEMIA (Estilizado globalmente en style.css) -->
+    <footer class="text-center py-4">
+        <p>&copy; 2026 Academia de Música. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
