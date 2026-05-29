@@ -1,0 +1,111 @@
+@import url("./style.css");
+
+/* ==========================
+   ENCABEZADO
+========================== */
+
+.hero-profesores {
+    background: linear-gradient(
+        rgba(30, 58, 138, 0.9),
+        rgba(30, 58, 138, 0.9)
+    );
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-profesores h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-profesores p {
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+/* ==========================
+   TARJETAS DE PROFESORES
+========================== */
+
+.profesor-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.profesor-card:hover {
+    transform: translateY(-5px);
+}
+
+.profesor-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.profesor-card .card-title {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.profesor-card .especialidad {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.profesor-card .card-text {
+    color: #64748b;
+}
+
+/* ==========================
+   MISIÓN Y VISIÓN
+========================== */
+
+.info-card {
+    border: none;
+    border-radius: 12px;
+    height: 100%;
+    padding: 15px;
+}
+
+.info-card h3 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #475569;
+    line-height: 1.7;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    .hero-profesores {
+        padding: 60px 20px;
+    }
+
+    .profesor-card img {
+        height: 220px;
+    }
+
+}
+/* ==========================
+   Foto antes de cargar la imagen real
+========================== */
+.placeholder-foto {
+    height: 280px;
+    background-color: #e2e8f0;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-bottom: 1px solid #cbd5e1;
+}
