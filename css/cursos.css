@@ -1,161 +1,116 @@
-/* ==========================================================================
-   ESTILOS ESPECÍFICOS: PÁGINA DE CURSOS (Academia de Música)
-   ========================================================================== */
-
-/* --- ENCABEZADO --- */
-.page-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1e1b4b; /* Tono violeta oscuro/musical muy elegante */
-    margin-bottom: 10px;
+/* ESTILOS GENERALES Y VARIABLES DE LA ACADEMIA*/
+:root {
+  --navy-primary: #001f42;
+  --gold-accent: #ffc107;
+  --text-muted: #6c757d;
+  --bg-light: #f8f9fa;
+  --border-color: #e2e8f0;
+  --shadow-smooth: 0 10px 20px rgba(0, 43, 91, 0.12);
 }
 
-.page-description {
-    font-size: 1.1rem;
-    color: #64748b;
-    max-width: 700px;
-    margin: 0 auto;
-}s
-
-/* --- BARRA DE BÚSQUEDA --- */
-.search-box {
-    display: flex;
-    background: #ffffff;
-    border: 2px solid #e2e8f0;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    transition: border-color 0.3s ease;
+/* Ajustes para el contenedor principal */
+main {
+  background-color: #ffffff;
+  min-height: 70vh;
 }
 
-.search-box:focus-within {
-    border-color: #d946ef; /* Tono magenta/fucsia para un look artístico al enfocar */
+/* Colores personalizados para complementar Bootstrap */
+.bg-navy {
+  background-color: var(--navy-primary) !important;
 }
 
-.search-input {
-    width: 100%;
-    border: none;
-    padding: 14px 20px;
-    font-size: 1rem;
-    outline: none;
+.text-navy {
+  color: var(--navy-primary) !important;
 }
 
-.search-button {
-    background-color: #1e1b4b;
-    color: #ffffff;
-    border: none;
-    padding: 0 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+.btn-navy {
+  background-color: var(--navy-primary);
+  border-color: var(--navy-primary);
+  color: #ffffff;
+  transition: background-color 0.2s ease;
 }
 
-.search-button:hover {
-    background-color: #d946ef;
+.btn-navy:hover {
+  background-color: #001329;
+  color: #ffffff;
 }
 
-/* --- SECCIONES DE CATEGORÍAS --- */
-.category-title {
-    font-size: 1.75rem;
-    color: #1e1b4b;
-    font-weight: 600;
-    position: relative;
-    padding-left: 15px;
+/*SECCIÓN DE FILTROS (BARRA LATERAL) */
+.filter-sidebar {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px;
+  position: sticky;
+  top: 90px; /* Se queda fija al hacer scroll debajo del navbar */
 }
 
-.category-title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    bottom: 4px;
-    width: 5px;
-    background-color: #d946ef; /* Detalle magenta para separar las categorías */
-    border-radius: 4px;
+.filter-sidebar h4 {
+  color: var(--navy-primary);
 }
 
-/* --- TARJETAS DE CURSOS --- */
+.form-check-input:checked {
+  background-color: var(--navy-primary);
+  border-color: var(--navy-primary);
+}
+
+/* TARJETAS DE CURSOS (ROL 2) */
 .course-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    overflow: hidden;
-    height: 100%; /* Mantiene todas las tarjetas con la misma altura simétrica */
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
+/* Efecto dinámico al pasar el cursor sobre el curso */
 .course-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  border-color: var(--gold-accent) !important;
+  box-shadow: var(--shadow-smooth) !important;
 }
 
-/* Contenedor temporal gris para cuando pongan las fotos */
-.course-image-placeholder {
-    width: 100%;
-    height: 180px;
-    background-color: #f8fafc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #475569;
-    font-size: 1.1rem;
-    font-weight: 500;
-    border-bottom: 1px solid #e2e8f0;
+.course-card .card-img-top {
+  border-radius: 6px 6px 0 0;
+  transition: transform 0.5s ease;
 }
 
-.course-card-body {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Empuja el footer de la tarjeta de forma equitativa */
+.course-card:hover .card-img-top {
+  transform: scale(1.02);
 }
 
-.course-badge {
-    align-self: flex-start;
-    background-color: #fdf4ff;
-    color: #a21caf;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-bottom: 12px;
+/* Badges y etiquetas internas */
+.badge.bg-navy {
+  background-color: var(--navy-primary) !important;
+  color: #ffffff;
 }
 
-.course-name {
-    font-size: 1.25rem;
-    color: #1e1b4b;
-    font-weight: 600;
-    margin-bottom: 8px;
+/* BOTONES DE NAVEGACIÓN Y FOOTER ACCENTS*/
+.btn-academy {
+  background-color: var(--navy-primary);
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
-.course-text {
-    font-size: 0.95rem;
-    color: #475569;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    flex-grow: 1; /* Alinea los metadatos de la tarjeta abajo */
+.btn-academy:hover {
+  background-color: #ffffff;
+  color: var(--navy-primary);
+  border-color: var(--navy-primary);
+  transform: translateY(-2px);
 }
 
-.course-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 16px;
-    border-top: 1px solid #f1f5f9;
-    font-size: 0.95rem;
+.social-media-icon {
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.course-duration {
-    color: #64748b;
-    font-weight: 500;
-}
-
-.course-price {
-    color: #059669; /* Verde esmeralda para el costo en colones */
-    font-weight: 700;
-    font-size: 1.1rem;
+.social-media-icon:hover {
+  background-color: var(--gold-accent) !important;
+  color: var(--navy-primary) !important;
+  transform: scale(1.1);
 }
